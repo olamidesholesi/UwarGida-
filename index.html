@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!!!! ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("hands.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Add a wrapper for the whole content */
+.wrapper {
+    max-width: 1200px; /* keeps layout neat on large screens */
+    margin: 0 auto;    /* center horizontally */
+    padding: 0 10px;   /* small side padding for very small screens */
+    box-sizing: border-box;
+}
+
+/* Headers & subtitle */
+h1 {
+    font-size: 3em;
+    margin-top: 39px;
+    color: #fff;
+    text-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff1e4d;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255,77,109,0.3);
+    display: inline-block;
+    background: rgba(0,0,0,0.2);
+}
+
+h2, .subtitle {
+    text-shadow: 0 0 3px #ff4d6d;
+    border-radius: 8px;
+    padding: 3px 10px;
+    border: 1px solid rgba(255,77,109,0.2);
+    display: inline-block;
+    background: rgba(0,0,0,0.15);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Images */
+.gallery img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,77,109,0.5), inset 0 0 5px rgba(255,255,255,0.2); 
+    border: 2px solid rgba(255,77,109,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,77,109,0.7), inset 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Videos with bevel/glow */
+.video-row video {
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,77,109,0.3);
+    box-shadow: 0 0 15px rgba(255,77,109,0.5), inset 0 0 5px rgba(255,255,255,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-row video:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255,77,109,0.7), inset 0 0 10px rgba(255,255,255,0.3);
+}
+
+button {
+    padding: 18px 35px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4d6d, #ff1e4d);
+    color: white;
+    cursor: pointer;
+    margin: 40px;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 15px #ff4d6d, 0 0 30px rgba(255,30,77,0.5);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+    transition: 0.5s;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 50px;
+    line-height: 1.8em;
+    border-radius: 15px;
+    padding: 15px;
+    background: rgba(0,0,0,0.25);
+    border: 2px solid rgba(255,77,109,0.3);
+}
+
+.heart {
+    position: fixed;
+    bottom: -10px;
+    font-size: 20px;
+    animation: floatUp 5s linear infinite;
+    color: red;
+}
+
+@keyframes floatUp {
+    0% {transform: translateY(0) rotate(0deg); opacity: 1;}
+    100% {transform: translateY(-100vh) rotate(360deg); opacity: 0;}
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.typing-text {
+    white-space: pre-line;
+    font-size: 1.3em;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<h1 class="fade-in">Happy Birthday my babygirl 🎉❤️</h1> </br></br>
+<p class="subtitle">I love you foreverrrr 😌</p> <!-- now on its own line -->
+</br></br>
+<h2>Remember these? Some of our best moments together😂💞💞💞</h2>
+
+<div class="gallery">
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+    <img src="photo4.jpg" alt="Memory 4">
+    <img src="photo5.jpg" alt="Memory 5">
+</div>
+
+<div class="video-row">
+    <video controls>
+        <source src="video1.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="video2.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="video3.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="video4.mp4" type="video/mp4">
+    </video>
+</div>
+
+<h2>You're my Favorite Human🥇, today and always, Ojonimiiii</h2>
+
+<p style="color:white; font-size:1.2em; padding: 0 20px;">
+I love youuuu <br>
+Come on, scroll downnn baby⬇️ <br>
+Like very enddd!
+</p>
+
+<div class="gallery">
+    <div class="video-row">
+        <video controls>
+            <source src="video5.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video6.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video7.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video8.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="video9.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<br><br><br>
+<button onclick="showSurprise()">Click me 🎁</button><br><br><br><br><br>
+
+<div class="hidden-message fade-in unlock" id="surprise">
+    <div class="typing-text" id="typedText"></div>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 10 + "px";
+    heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+}
+setInterval(createHeart, 300);
+
+const fullMessage = `To my heart in human form,
+My flower girl
+My babygirl forever♾️
+
+Happiest of birthdays to my only one lover, the girl who has my heart
+Ojonimi, on this day, the Lord graced this earth by placing you in it
+You're the gift that keeps giving, I love you in every way!
+And I’m forever grateful for you, my babygirl🙏💕
+
+Joy, Joy, Joy
+Literally, in my heart, always😂💕
+I love you so very much, my sweet girl
+It’s not just your name that’s Joy, it’s your entire being
+You are Joy personified and thank you, today and always, for being the beautiful person that you are
+It’s this same Joy you’ve brought along since you walked in on me, Sekani, thank you💞
+
+The Lord maintains your lot and your path yields a bountiful harvest, sweetie🙏🏾
+By God’s grace and mercy, the lines fall for you in pleasant places, my princess
+
+Happy birthday💕
+From me to you, with all my love
+
+Let me know what 23 is like. Keep a cozy seat, I’ll join you in 20 days, aunty😹
+I love you with all my heart, Ojonimi mi
+I’m thankful for the gift of you
+Your first birthday with me in your life and the first of many more to be shared together, my baby
+I love you forever, I love you always🫂
+
+My gem, my Orekelewa
+Barkanku da ranar haihuwa, Gimbiya ta🙈
+Have the most beautiful day, my cupcake💕🤞🏾
+
+Love, Bobola🫂💞`;
+
+let index = 0;
+function typeMessage() {
+    if (index < fullMessage.length) {
+        document.getElementById("typedText").innerHTML += fullMessage.charAt(index);
+        index++;
+        setTimeout(typeMessage, 10);
+    }
+}
+
+function showSurprise() {
+    const messageBox = document.getElementById("surprise");
+    messageBox.style.display = "block";
+
+    for (let i = 0; i < 150; i++) {
+        const confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.backgroundColor =
+            ["#ff4d6d","#ffd700","#00c3ff","#9b59b6","#2ecc71"][Math.floor(Math.random()*5)];
+        document.body.appendChild(confetti);
+        setTimeout(() => confetti.remove(), 3000);
+    }
+
+    typeMessage();
+}
+
+// Scroll unlock
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+});
+document.querySelectorAll(".unlock").forEach(el => observer.observe(el));
+</script>
+</div> <!-- end wrapper -->
+</body>
+</html>
